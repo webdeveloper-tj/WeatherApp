@@ -1,0 +1,69 @@
+.baner {
+  position: relative;
+  width: 87%;
+  margin: 0px auto;
+}
+.country {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.weather {
+  margin: 10px 0px;
+  height: 300px;
+  background-color: lightblue;
+  border-radius: 5px;
+}
+.box_weather {
+  display: flex;
+  justify-content: space-around;
+}
+.condition_weather {
+  display: flex;
+  align-items: center;
+}
+
+.box_weather p {
+  align-self: flex-end;
+  font-size: 1.5rem;
+}
+.description {
+  text-transform: uppercase;
+}
+.loading-box {
+  margin: 0;
+  padding: 0;
+  height: 83vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-box h1 {
+  position: relative;
+  color: white;
+  letter-spacing: 5px;
+  border-bottom: 16px solid white;
+  list-style: 1.4;
+  font-family: consolas;
+  text-transform: uppercase;
+}
+h1::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: black;
+
+  animation: lod 1.5s linear infinite;
+  overflow: hidden;
+}
+
+@keyframes lod {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

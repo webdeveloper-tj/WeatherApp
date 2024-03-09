@@ -1,0 +1,32 @@
+.cv-section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.about-load {
+  animation-timing-function: linear;
+  animation-name: load;
+  animation-duration: 2.5s;
+}
+.cv {
+  position: relative;
+}
+.cv .go_to_back {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

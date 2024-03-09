@@ -1,0 +1,55 @@
+.contact-load {
+  animation-timing-function: linear;
+  animation-name: load-contact;
+  animation-duration: 2.5s;
+}
+
+.hello {
+  animation: hello 2s linear 100ms;
+}
+.contact-me {
+  width: 500px;
+  padding: 30px;
+  box-shadow: 0px 0px 5px black;
+  border-radius: 10px 10px 10px 2px;
+  margin: 8.5rem auto;
+  animation: animated 2s linear 100ms;
+  position: relative;
+}
+.contact-load .go_to_back {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+@keyframes load-contact {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hello {
+  0% {
+    transform: translateY(-75px);
+  }
+
+  85% {
+    transform: translateY(-10px);
+  }
+  95% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes animated {
+  0% {
+    transform: translate(0px, 150px);
+  }
+  100% {
+    transform: translate(0px, -1px);
+  }
+}
